@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800" prefWidth="1000.0" styleClass="Wall" stylesheets="@../design.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="diaryWork.controllers.ListController">
+   <children>
+      <Label fx:id="list" layoutX="473.0" text="List" textFill="#ffe100">
+         <font>
+            <Font name="Harlow Solid Italic" size="60.0" />
+         </font>
+      </Label>
+      <Label fx:id="list1" layoutX="466.0" text="List" textFill="#fffdef">
+         <font>
+            <Font name="Harlow Solid Italic" size="60.0" />
+         </font>
+      </Label>
+      <Button fx:id="editor" layoutX="873.0" layoutY="729.0" mnemonicParsing="false" onAction="#handleEditorButton" prefHeight="47.0" prefWidth="84.0" stylesheets="@../design.css" text="editor" textFill="WHITE">
+         <font>
+            <Font name="Franklin Gothic Heavy Italic" size="14.0" />
+         </font>
+         <styleClass>
+            <String fx:value="ButtonEdit" />
+            <String fx:value="ButtonBGEdit" />
+         </styleClass>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <TableView fx:id="tableList" layoutX="15.0" layoutY="188.0" prefHeight="479.0" prefWidth="587.0" />
+      <ComboBox fx:id="status" layoutX="168.0" layoutY="135.0" prefHeight="26.0" prefWidth="173.0" promptText="Status" />
+      <Button fx:id="checkStatus" layoutX="367.0" layoutY="135.0" mnemonicParsing="false" onAction="#handleChecksButton" styleClass="ButtonComboBox" stylesheets="@../design.css" text="check" textFill="#320391">
+         <font>
+            <Font name="Baskerville Old Face" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="checkDate" layoutX="881.0" layoutY="135.0" mnemonicParsing="false" onAction="#handleCheckButton" styleClass="ButtonComboBox" stylesheets="@../design.css" text="check" textFill="#320391">
+         <font>
+            <Font name="Baskerville Old Face" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <DatePicker fx:id="date" layoutX="687.0" layoutY="135.0" prefHeight="26.0" prefWidth="156.0" promptText="CheckDate" styleClass="ButtonComboBox" stylesheets="@../design.css" />
+      <Button fx:id="refresh" layoutX="47.0" layoutY="729.0" mnemonicParsing="false" onAction="#handleRefreshButton" prefHeight="47.0" prefWidth="84.0" stylesheets="@../design.css" text="refresh" textFill="WHITE">
+         <font>
+            <Font name="Franklin Gothic Heavy" size="14.0" />
+         </font>
+         <styleClass>
+            <String fx:value="ButtonEdit" />
+            <String fx:value="ButtonBGEdit" />
+         </styleClass>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Line endX="-53.0" endY="33.59999084472656" layoutX="671.0" layoutY="186.0" startX="-53.0" startY="392.0" stroke="#ffe800" strokeWidth="4.0" />
+      <Label layoutX="663.0" layoutY="244.0" text="Start date :" textFill="WHITE">
+         <font>
+            <Font name="Baskerville Old Face" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="663.0" layoutY="582.0" text="Start time :" textFill="WHITE">
+         <font>
+            <Font name="Baskerville Old Face" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="663.0" layoutY="633.0" text="End time  :" textFill="WHITE">
+         <font>
+            <Font name="Baskerville Old Face" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="661.0" layoutY="445.0" text="Date begin  :" textFill="WHITE">
+         <font>
+            <Font name="Baskerville Old Face" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="663.0" layoutY="515.0" text="Work end date :" textFill="WHITE">
+         <font>
+            <Font name="Baskerville Old Face" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="663.0" layoutY="368.0" text="Responsible/Leader  :" textFill="WHITE">
+         <font>
+            <Font name="Baskerville Old Face" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="658.0" layoutY="301.0" text="Day of work" textFill="WHITE">
+         <font>
+            <Font name="Baskerville Old Face" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="dateWork" layoutX="778.0" layoutY="244.0" prefHeight="22.0" prefWidth="118.0" textFill="WHITE">
+         <font>
+            <Font name="Baskerville Old Face" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="finish" layoutX="813.0" layoutY="515.0" prefHeight="22.0" prefWidth="136.0" textFill="WHITE">
+         <font>
+            <Font name="Baskerville Old Face" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="begin" layoutX="805.0" layoutY="445.0" prefHeight="22.0" prefWidth="101.0" textFill="WHITE">
+         <font>
+            <Font name="Baskerville Old Face" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="boss" layoutX="837.0" layoutY="370.0" prefHeight="22.0" prefWidth="118.0" textFill="WHITE">
+         <font>
+            <Font name="Baskerville Old Face" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="week" layoutX="786.0" layoutY="303.0" textFill="WHITE">
+         <font>
+            <Font name="Baskerville Old Face" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="start" layoutX="781.0" layoutY="582.0" prefHeight="22.0" prefWidth="150.0" textFill="WHITE">
+         <font>
+            <Font name="Baskerville Old Face" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="end" layoutX="768.0" layoutY="633.0" prefHeight="22.0" prefWidth="127.0" textFill="WHITE">
+         <font>
+            <Font name="Baskerville Old Face" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

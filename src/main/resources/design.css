@@ -1,0 +1,60 @@
+.Button{
+    -fx-background-color: #000066;
+
+    -fx-background-radius: 100;
+ }
+.ButtonBGHover:hover{
+    -fx-background-color : #FF8000;
+    -fx-background-radius :100 ;
+ }
+.textField{
+     -fx-background-radius: 10px;
+ }
+.ButtonBox{
+     -fx-background-color: #FF9933;
+
+     -fx-background-radius: 100;
+  }
+.ButtonHoverBox:hover{
+     -fx-background-color : #FFFF00;
+     -fx-background-radius :100 ;
+     }
+ .ButtonOrange:hover{
+      -fx-background-color : #FF9933;
+      }
+.ButtonEdit{
+      -fx-background-color : #3399FF;
+      -fx-background-radius :100 ;
+      }
+.ButtonBGEdit:hover{
+    -fx-background-color : #99CCFF;
+    }
+.ButtonAddHover:hover{
+    -fx-background-color : #000066;
+    -fx-background-radius :100 ;
+  }
+
+.ButtonBack{
+     -fx-background-color: #99FF33;
+       -fx-background-radius :100 ;
+     }
+.ButtonWork{
+    -fx-background-color: #000066;
+ }
+.ButtonComboBox{
+    -fx-background-color:#FFE600;
+ }
+.ButtonWhite:hover{
+    -fx-background-color:#FFFFFF;
+ }
+ .ButtonTask{
+     -fx-background-color:#FF0000;
+  }
+.Wall{
+    -fx-background-image:url("photo/List.jpg");
+    -fx-background-size:100% 100%;
+}
+.WallWork{
+    -fx-background-image:url("photo/Work.jpg");
+    -fx-background-size:100% 100%;
+}

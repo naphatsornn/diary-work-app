@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="diaryWork.controllers.HomeController">
+   <children>
+      <ImageView fx:id="BG3" fitHeight="602.0" fitWidth="411.0" layoutX="-1.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../photo/BGHome.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="admin" layoutX="300.0" layoutY="17.0" mnemonicParsing="false" onAction="#handleAdminButton" prefHeight="36.0" prefWidth="70.0" stylesheets="@../design.css" text="admin" textFill="WHITE">
+         <font>
+            <Font name="Franklin Gothic Heavy" size="14.0" />
+         </font>
+         <styleClass>
+            <String fx:value="ButtonHoverBox" />
+            <String fx:value="ButtonBox" />
+         </styleClass></Button>
+      <Label fx:id="work" layoutX="102.0" layoutY="139.0" text="Diary Work" textFill="#000066">
+         <font>
+            <Font name="Harlow Solid Italic" size="40.0" />
+         </font></Label>
+      <Button fx:id="task" layoutX="144.0" layoutY="244.0" mnemonicParsing="false" onAction="#handleWorkButton" prefHeight="56.0" prefWidth="124.0" styleClass="ButtonWork" stylesheets="@../design.css" text="work" textFill="WHITE">
+         <font>
+            <Font name="Franklin Gothic Heavy" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="category" layoutX="138.0" layoutY="372.0" mnemonicParsing="false" onAction="#handleCategoryButton" prefHeight="56.0" prefWidth="135.0" styleClass="ButtonWork" stylesheets="@../design.css" text="Category" textFill="WHITE">
+         <font>
+            <Font name="Franklin Gothic Heavy" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="guide" layoutX="35.0" layoutY="17.0" mnemonicParsing="false" onAction="#handleGuideButton" prefHeight="36.0" prefWidth="70.0" stylesheets="@../design.css" text="guide" textFill="WHITE">
+         <font>
+            <Font name="Franklin Gothic Heavy" size="14.0" />
+         </font>
+         <styleClass>
+            <String fx:value="ButtonBox" />
+            <String fx:value="ButtonHoverBox" />
+         </styleClass></Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="diaryWork.controllers.GuideController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../photo/BGGuide.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="back" layoutX="40.0" layoutY="536.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="37.0" prefWidth="71.0" styleClass="ButtonBox" stylesheets="@../design.css" text="back" textFill="WHITE">
+         <font>
+            <Font name="Franklin Gothic Heavy" size="14.0" />
+         </font></Button>
+      <TextArea fx:id="diaryWork" layoutX="76.0" layoutY="184.0" prefHeight="310.0" prefWidth="263.0" style="-fx-background-color: #ffe3c1;" stylesheets="@../design.css" text="โปรแกรม Diary work&#10;เป็นโปรแกรมเกี่ยวกับ&#10;การบริหารการทำงานในแต่ละวัน&#10;ทำให้จัดสรรชีวิตการทำงานให้มี&#10;work balance มากยิ่งขึ้น &#10;เหมาะกับไลฟ์สไตล์ของคนรุ่นใหม่&#10;ที่ต้องการตัวช่วยในการจัดสรรเวลาให้ลงตัว&#10;&#10;work &#10;สามารถเพิ่มงานได้4ประเภท &#10;แต่ละประเภทจะมีข้อมูลให้ผู้ใช้สามารถ&#10;กรอกได้ตามความต้องการผู้ใช้งาน&#10;&#10;List&#10;เป็นหน้าที่จะแสดงผลของงานทั้งหมด&#10;ที่ผู้ใช้กรอกเข้ามาโดยจะเรียง&#10;ลำดับความสำคัญจากระดับ3(มาก)&#10;ไป1(น้อย)และผู้ใช้สามารถค้นหางาน&#10;จากสถานะต่างๆและจากวันที่&#10;ที่ผู้ใช้เลือกค้นหา &#10;&#10;Editlist&#10;เป็นหน้าสำหรับการแก้ไขรายละเอียดงาน&#10;&#10;Category&#10;เป็นหน้าแสดงจำนวนงานแต่ละงานใน&#10;หมวดหมู่นั้นๆ &#10;">
+         <font>
+            <Font name="Arial Narrow" size="18.0" />
+         </font>
+      </TextArea>
+   </children>
+</AnchorPane>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="diaryWork.controllers.EditListController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" opacity="0.94" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../photo/BGEdit.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="editList" layoutX="450.0" layoutY="99.0" prefHeight="274.0" prefWidth="312.0" />
+      <Label layoutX="546.0" layoutY="45.0" text="Work List" textFill="WHITE">
+         <font>
+            <Font name="Harlow Solid Italic" size="25.0" />
+         </font></Label>
+      <Label layoutX="73.0" layoutY="36.0" text="Category" textFill="WHITE">
+         <font>
+            <Font name="Franklin Gothic Heavy Italic" size="15.0" />
+         </font></Label>
+      <Label layoutX="88.0" layoutY="81.0" text="Type" textFill="WHITE">
+         <font>
+            <Font name="Franklin Gothic Heavy" size="15.0" />
+         </font></Label>
+      <Label fx:id="categoryLabel" layoutX="170.0" layoutY="36.0" prefHeight="19.0" prefWidth="163.0" textFill="WHITE">
+         <font>
+            <Font name="Franklin Gothic Heavy" size="16.0" />
+         </font></Label>
+      <Label fx:id="typeLabel" layoutX="175.0" layoutY="81.0" prefHeight="19.0" prefWidth="174.0" textFill="WHITE">
+         <font>
+            <Font name="Franklin Gothic Heavy" size="16.0" />
+         </font></Label>
+      <Label layoutX="88.0" layoutY="127.0" text="Name" textFill="WHITE">
+         <font>
+            <Font name="Franklin Gothic Heavy" size="12.0" />
+         </font></Label>
+      <Button fx:id="update" layoutX="684.0" layoutY="533.0" mnemonicParsing="false" onAction="#handleUpdateButton" prefHeight="43.0" prefWidth="90.0" stylesheets="@../design.css" text="update" textFill="#1c008a">
+         <font>
+            <Font name="Franklin Gothic Heavy" size="14.0" />
+         </font>
+         <styleClass>
+            <String fx:value="ButtonBox" />
+            <String fx:value="ButtonHoverBox" />
+         </styleClass></Button>
+      <TextField fx:id="personField" layoutX="171.0" layoutY="249.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <Label layoutX="73.0" layoutY="211.0" text="Important" textFill="WHITE">
+         <font>
+            <Font name="Franklin Gothic Heavy" size="13.0" />
+         </font></Label>
+      <Label layoutX="83.0" layoutY="254.0" text="Person" textFill="WHITE">
+         <font>
+            <Font name="Franklin Gothic Heavy" size="13.0" />
+         </font></Label>
+      <Label layoutX="69.0" layoutY="304.0" text="Date begin" textFill="WHITE">
+         <font>
+            <Font name="Franklin Gothic Heavy" size="13.0" />
+         </font></Label>
+      <Label layoutX="58.0" layoutY="353.0" text="Work end date" textFill="WHITE">
+         <font>
+            <Font name="Franklin Gothic Heavy" size="13.0" />
+         </font></Label>
+      <TextField fx:id="startField" layoutX="172.0" layoutY="398.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <TextField fx:id="endField" layoutX="171.0" layoutY="440.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <Label layoutX="73.0" layoutY="403.0" text="Start time" textFill="WHITE">
+         <font>
+            <Font name="Franklin Gothic Heavy" size="13.0" />
+         </font></Label>
+      <Label layoutX="77.0" layoutY="445.0" text="End time  " textFill="WHITE">
+         <font>
+            <Font name="Franklin Gothic Heavy" size="13.0" />
+         </font></Label>
+      <Label layoutX="68.0" layoutY="497.0" text="Day of work" textFill="WHITE">
+         <font>
+            <Font name="Franklin Gothic Heavy" size="13.0" />
+         </font></Label>
+      <ChoiceBox fx:id="status" layoutX="166.0" layoutY="547.0" prefWidth="150.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ChoiceBox>
+      <DatePicker fx:id="dateBegin" layoutX="171.0" layoutY="299.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></DatePicker>
+      <DatePicker fx:id="dateFinish" layoutX="171.0" layoutY="348.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></DatePicker>
+      <ChoiceBox fx:id="important" layoutX="171.0" layoutY="206.0" prefWidth="150.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ChoiceBox>
+      <Label layoutX="85.0" layoutY="552.0" text="status" textFill="WHITE">
+         <font>
+            <Font name="Franklin Gothic Heavy" size="13.0" />
+         </font></Label>
+      <RadioButton fx:id="mon" layoutX="170.0" layoutY="479.0" mnemonicParsing="false" text="mon" textFill="WHITE" />
+      <RadioButton fx:id="fri" layoutX="170.0" layoutY="514.0" mnemonicParsing="false" text="fri" textFill="WHITE" />
+      <RadioButton fx:id="thu" layoutX="386.0" layoutY="479.0" mnemonicParsing="false" text="thu" textFill="WHITE" />
+      <RadioButton fx:id="wed" layoutX="319.0" layoutY="479.0" mnemonicParsing="false" text="wed" textFill="WHITE" />
+      <RadioButton fx:id="tue" layoutX="245.0" layoutY="479.0" mnemonicParsing="false" text="tue" textFill="WHITE" />
+      <RadioButton fx:id="sun" layoutX="321.0" layoutY="514.0" mnemonicParsing="false" text="sun" textFill="WHITE" />
+      <RadioButton fx:id="sat" layoutX="246.0" layoutY="514.0" mnemonicParsing="false" text="sat" textFill="WHITE" />
+      <Label layoutX="83.0" layoutY="166.0" text="Start date " textFill="WHITE">
+         <font>
+            <Font name="Franklin Gothic Heavy" size="12.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dateWork" layoutX="171.0" layoutY="161.0" />
+      <Label fx:id="nameLabel" layoutX="175.0" layoutY="114.0" prefHeight="26.0" prefWidth="218.0" textFill="WHITE">
+         <font>
+            <Font name="Franklin Gothic Heavy" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
